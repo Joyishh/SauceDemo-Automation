@@ -50,7 +50,7 @@ Performs precise mathematical verifications (found in `TC-CHEK-001`):
 ### 1. Clone the Repository
 Open your terminal and run:
 
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone https://github.com/Joyishh/SauceDemo-Automation.git
 
 ### 2. Open in Katalon Studio
 * Launch **Katalon Studio**.
