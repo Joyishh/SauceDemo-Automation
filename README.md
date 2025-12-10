@@ -1,47 +1,73 @@
-# SauceDemo Automation Framework 🚀
+SauceDemo Automation Framework 🚀
 
-![Katalon Studio](https://img.shields.io/badge/Made%20with-Katalon%20Studio-green) ![Language](https://img.shields.io/badge/Language-Groovy-blue) ![Target](https://img.shields.io/badge/Target-SauceDemo-orange)
+Automated testing framework for the Swag Labs (SauceDemo) e-commerce website. Dibangun dengan Katalon Studio dan diperkuat dengan Groovy scripting untuk memvalidasi logika bisnis yang lebih kompleks, termasuk perhitungan harga dan pengujian sorting dinamis.
 
-Project automation testing untuk situs e-commerce **[Swag Labs (SauceDemo)](https://www.saucedemo.com/)**.
+Features & Test Coverage
+1. Authentication
 
-Dibangun menggunakan **Katalon Studio**, project ini menerapkan pendekatan scripting (Groovy) untuk menangani validasi logika bisnis yang kompleks, seperti verifikasi algoritma sorting dan kalkulasi total harga secara akurat.
+Positive: Login sukses dengan kredensial valid.
 
-## 📋 Fitur & Cakupan Test
+Negative: Validasi pesan error.
 
-Project ini mencakup skenario pengujian *end-to-end* berikut:
+Edge: Penanganan akun terkunci.
 
-### 1. Authentication (Login) 🔐
-* **Positive Case:** Login sukses dengan user valid (`standard_user`).
-* **Negative Case:** Validasi pesan error jika kredensial salah.
-* **Edge Case:** Validasi login untuk user yang terblokir (`locked_out_user`).
+2. Advanced Product Filtering
 
-### 2. Advanced Product Filtering 📊
-Tidak hanya mengecek teks statis, automation ini memverifikasi algoritma sorting secara dinamis menggunakan manipulasi List/Array:
-* **Price (Low to High) & (High to Low):** Script mengambil harga produk, melakukan parsing ke tipe data `Double`, dan membandingkan urutan UI dengan hasil sorting programatik (`Collections.sort`).
-* **Name (A to Z) & (Z to A):** Validasi urutan alfabetis nama produk secara otomatis.
+Sorting diverifikasi secara programatis:
 
-### 3. Shopping Cart & Inventory 🛒
-* Menambahkan produk ke keranjang dari halaman Inventory dan Detail Product.
-* Menghapus produk dari keranjang belanja.
-* Memastikan data item persisten saat navigasi antar halaman (*Continue Shopping*).
+Harga Low–High dan High–Low menggunakan casting Double dan Collections.sort.
 
-### 4. Checkout & Math Validation 🧮
-Bagian ini melakukan validasi perhitungan matematis secara presisi:
-* **Mandatory Fields:** Validasi error message untuk First Name, Last Name, dan Zip Code.
-* **Total Calculation:** Script mengambil harga satuan item, menghitung **Subtotal + Tax**, dan membandingkannya dengan **Grand Total** yang ditampilkan sistem (termasuk penanganan pembulatan desimal `Math.round`).
+Nama A–Z dan Z–A untuk pengecekan alfabetis.
 
-## 🛠️ Tech Stack
+3. Shopping Cart & Inventory
 
-* **Tools:** Katalon Studio (Enterprise/Free)
-* **Language:** Groovy
-* **Design Pattern:** Page Object Model (via Object Repository)
-* **Version Control:** Git
+Tambah dan hapus produk dari Inventory dan Product Detail.
 
-## 📂 Struktur Project
+Validasi persistensi item saat navigasi.
 
-```text
-├── Object Repository/   # Elemen UI (XPath/CSS Selectors)
-├── Profiles/            # Global Variables (Environment Config)
-├── Scripts/             # Logika Groovy untuk Test Case
-├── Test Cases/          # Definisi Test Case (Modular)
-└── Test Suites/         # Kumpulan eksekusi test
+4. Checkout & Math Validation
+
+Validasi mandatory fields.
+
+Perhitungan Subtotal + Tax dan verifikasi Grand Total melalui perhitungan script (termasuk pembulatan desimal).
+
+Tech Stack
+
+Tools: Katalon Studio (v10.x)
+
+Language: Groovy
+
+Pattern: Page Object Model
+
+Browsers: Chrome, Chrome Headless
+
+Project Structure
+├── Object Repository/   # UI Elements
+├── Profiles/            # Global Variables
+├── Scripts/             # Groovy Logic
+├── Test Cases/          # Modular Test Case Definitions
+└── Test Suites/         # Execution Collections
+
+How to Run
+1. Clone the Repository
+git clone https://github.com/your-username/your-repo-name.git
+
+2. Open in Katalon Studio
+
+Buka Katalon Studio.
+
+File > Open Project.
+
+Pilih folder hasil clone dan buka file .prj.
+
+3. Setup Drivers
+
+Pastikan WebDriver versi terbaru.
+
+Tools > Update WebDrivers > Chrome.
+
+4. Run Test
+
+Buka salah satu Test Case di folder Test Cases.
+
+Klik tombol Run dan pilih Chrome atau Chrome Headless.
