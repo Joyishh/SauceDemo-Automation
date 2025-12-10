@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_backpack price</name>
+   <tag></tag>
+   <elementGuidId>cb830744-0cdd-41a5-a8b8-a5483250220a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[data-test=&quot;inventory-item&quot;]:nth-child(1) [data-test=&quot;inventory-item-price&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(@data-test = 'inventory-item') and (position() = 1)]//*[@data-test = 'inventory-item-price']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;$29.99&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>e3af3b4f-b20a-47d2-a705-a76c8cd40081</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>inventory_item_price</value>
+      <webElementGuid>0b31180c-338a-4f3c-939b-ec01ea20ffc3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-test</name>
+      <type>Main</type>
+      <value>inventory-item-price</value>
+      <webElementGuid>9594acdb-d068-4b20-906f-6fbeff979f7f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>$29.99</value>
+      <webElementGuid>d4fc5f6f-4660-45bd-bc92-0d24dc85c58f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-d6ab362e8148cb390d797e9a73cdb6b5</value>
+      <webElementGuid>fb9f4c2c-202e-4e13-8e66-56de785565e0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(@data-test = 'inventory-item') and (position() = 1)]//*[@data-test = 'inventory-item-price']</value>
+      <webElementGuid>e8c07670-5ed2-4802-9649-31dd02990d08</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(@data-test = 'inventory-item') and (position() = 1)]//*[@data-test = 'inventory-item-price']</value>
+      <webElementGuid>500dcc4d-dc57-40e9-a214-4c376c34c4ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '$29.99' or . = '$29.99')]</value>
+      <webElementGuid>7649be0a-8c61-4f43-b5f7-f8b1c94f3524</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

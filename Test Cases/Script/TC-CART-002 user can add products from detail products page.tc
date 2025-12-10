@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-CART-002 user can add products from detail products page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>04f83654-f491-4aea-9849-d7d4fc4012ed</testCaseGuid>
+</TestCaseEntity>

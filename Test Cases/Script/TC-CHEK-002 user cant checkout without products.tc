@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-CHEK-002 user cant checkout without products</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>74ae8e4b-8172-45b1-8150-33ad81a880c1</testCaseGuid>
+</TestCaseEntity>

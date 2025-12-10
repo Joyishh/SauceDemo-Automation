@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-FLTR-004 user can filter products from Low to High price</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0de807d1-4dae-4c1c-8fe3-347ee2862eda</testCaseGuid>
+</TestCaseEntity>

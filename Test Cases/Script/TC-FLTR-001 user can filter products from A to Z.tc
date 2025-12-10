@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-FLTR-001 user can filter products from A to Z</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>57f19bf4-8a83-4a81-957c-f9d1f4120089</testCaseGuid>
+</TestCaseEntity>

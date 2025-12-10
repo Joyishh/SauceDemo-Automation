@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-CART-003 user can add products and back to shopping</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6c5048de-e031-49cc-8f4d-b6bdcd4124b2</testCaseGuid>
+</TestCaseEntity>

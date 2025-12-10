@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-CHEK-005 user cant checkout without zip code</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7b867228-a071-4da4-a64f-a5063b08e0cc</testCaseGuid>
+</TestCaseEntity>

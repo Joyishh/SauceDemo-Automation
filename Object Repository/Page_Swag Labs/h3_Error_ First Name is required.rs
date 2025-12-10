@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h3_Error_ First Name is required</name>
+   <tag></tag>
+   <elementGuidId>71a90eb6-a1b4-4518-9927-a3687e602638</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[data-test=&quot;error&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@data-test = 'error']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[data-test=&quot;error&quot;]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+      <webElementGuid>04dec3b8-1e6b-44bb-be3c-ff3e56e3a5b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-test</name>
+      <type>Main</type>
+      <value>error</value>
+      <webElementGuid>24162a1a-1334-4433-9302-1ed40566588c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Epic sadface: You can only access '/inventory.html' when you are logged in.</value>
+      <webElementGuid>440d3a7f-33ee-4e0f-9879-d6139779d37a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-572bbb4624b9f391499cff5f709e853a</value>
+      <webElementGuid>3c4c792c-f9e0-4231-9fe9-83f5957ef34f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@data-test = 'error']</value>
+      <webElementGuid>9546b45c-c480-4d4e-a57c-6472ac98d302</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@data-test = 'error']</value>
+      <webElementGuid>c539674f-fd25-4516-9fa0-503abcf603ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h3[(text() = concat(&quot;Epic sadface: You can only access &quot; , &quot;'&quot; , &quot;/inventory.html&quot; , &quot;'&quot; , &quot; when you are logged in.&quot;) or . = concat(&quot;Epic sadface: You can only access &quot; , &quot;'&quot; , &quot;/inventory.html&quot; , &quot;'&quot; , &quot; when you are logged in.&quot;))]</value>
+      <webElementGuid>076cc64d-ee18-4df0-a574-105a057f067e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
