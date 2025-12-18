@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil
 import org.openqa.selenium.WebElement
 
-WebUI.callTestCase(findTestCase('Test Cases/Script/TC-AUTH-001 login with correct credential'), null)
+WebUI.callTestCase(findTestCase('null'), null)
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/select_Name (A to Z)Name (Z to A)Price (low to h'))
 

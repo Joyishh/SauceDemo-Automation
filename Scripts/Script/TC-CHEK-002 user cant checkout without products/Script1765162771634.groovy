@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/Script/TC-AUTH-001 login with correct credential'), null)
+WebUI.callTestCase(findTestCase('null'), null)
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/icon_cart'))
 

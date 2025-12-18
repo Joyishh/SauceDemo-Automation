@@ -22,28 +22,18 @@ WebUI.callTestCase(findTestCase('Test Cases/Script/TC-AUTH-001 login with correc
 
 WebUI.navigateToUrl('https://www.saucedemo.com/inventory.html')
 
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_add-to-cart-sauce-labs-backpack'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/button_remove-sauce-labs-backpack'), 'Remove')
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/btn_dynamic_add_to_cart', [('productName') : var_productName]))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/span_1'), '1')
 
-String nameItem = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/div_Sauce Labs Backpack from products'))
+String descItem = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/txt_product_page_item_desc', [('productName') : var_productName]))
 
-String descItem = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/div_backpack desc'))
-
-String priceItem = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/div_backpack price'))
+String priceItem = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/txt_product_page_item_price', [('productName') : var_productName]))
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/icon_cart'))
 
-String nameItemAtCart = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/div_Sauce Labs Backpack from cart'))	
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/txt_cart_item_name', [('productName') : var_productName]), var_productName, STOP_ON_FAILURE)
 
-String descItemAtCart = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/div_backpack desc at cart'))	
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/txt_cart_item_desc', [('productName') : var_productName]), descItem, STOP_ON_FAILURE)
 
-String priceItemAtCart = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/div_backpack price at cart'))
-
-WebUI.verifyMatch(nameItem, nameItemAtCart, false, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyMatch(descItem, descItemAtCart, false, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyMatch(priceItem, priceItemAtCart, false, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/txt_cart_item_price', [('productName') : var_productName]), priceItem, STOP_ON_FAILURE)

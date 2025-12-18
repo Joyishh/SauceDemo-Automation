@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>525fbbcf-2500-4372-8ef8-c3b20aa62a08</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0ba3c47b-5aec-4d35-a1f0-4d677838cd1f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Sauce Labs Fleece Jacket'</defaultValue>
+      <description></description>
+      <id>0ba3c47b-5aec-4d35-a1f0-4d677838cd1f</id>
+      <masked>false</masked>
+      <name>var_productName</name>
+   </variable>
 </TestCaseEntity>

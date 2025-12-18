@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txt_product_page_item_price</name>
+   <tag></tag>
+   <elementGuidId>d295008c-7d2f-4aec-bc9b-356c19ab6236</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[text()='${productName}']/ancestor::div[@class='inventory_item_description']//div[@class='inventory_item_price']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[text()='${productName}']/ancestor::div[@class='inventory_item_description']//div[@class='inventory_item_price']</value>
+      <webElementGuid>3306acd9-b4fc-4b19-aace-7e8740796bde</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

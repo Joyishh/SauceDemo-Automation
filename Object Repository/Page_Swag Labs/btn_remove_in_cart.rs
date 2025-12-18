@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_remove_in_cart</name>
+   <tag></tag>
+   <elementGuidId>97b4711a-ca6e-433b-80b8-ab0538f4051a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[text()='${productName}']/ancestor::div[@class='cart_item_label']//button[text()='Remove']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[text()='${productName}']/ancestor::div[@class='cart_item_label']//button[text()='Remove']</value>
+      <webElementGuid>d9055f90-bb3c-4dcd-957d-5e014188cffc</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

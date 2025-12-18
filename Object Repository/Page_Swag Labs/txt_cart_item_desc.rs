@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txt_cart_item_desc</name>
+   <tag></tag>
+   <elementGuidId>eed3fff5-8b5c-4b6a-9aee-a80d62fd19f6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[text()='${productName}']/ancestor::div[@class='cart_item_label']//div[@class='inventory_item_desc']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[text()='${productName}']/ancestor::div[@class='cart_item_label']//div[@class='inventory_item_desc']</value>
+      <webElementGuid>c14d9c4e-494d-4e71-beb4-20489cca9b82</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -19,12 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Test Cases/Script/TC-CART-003 user can add products and back to shopping'), null)
 
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_remove-sauce-labs-backpack from cart'))
+TestObject btnRemove = findTestObject('Object Repository/Page_Swag Labs/btn_remove_in_cart', [('productName') : var_productName])
 
-WebUI.waitForElementNotVisible(findTestObject('Object Repository/Page_Swag Labs/button_remove-sauce-labs-backpack from cart'), 2)
+WebUI.click(btnRemove)
 
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_remove-sauce-labs-bike-light from cart'))
+TestObject namaBarang = findTestObject('Object Repository/Page_Swag Labs/txt_cart_item_name', [('productName') : var_productName])
 
-WebUI.waitForElementNotVisible(findTestObject('Object Repository/Page_Swag Labs/button_remove-sauce-labs-bike-light from cart'), 2)
-
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Page_Swag Labs/span_2'), 2)
+WebUI.verifyElementNotPresent(namaBarang, 5, FailureHandling.STOP_ON_FAILURE)

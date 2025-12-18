@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>04f83654-f491-4aea-9849-d7d4fc4012ed</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cbe719c6-7279-4fc1-bb17-6962aa9e1f2c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Sauce Labs Bolt T-Shirt'</defaultValue>
+      <description></description>
+      <id>cbe719c6-7279-4fc1-bb17-6962aa9e1f2c</id>
+      <masked>false</masked>
+      <name>var_productName</name>
+   </variable>
 </TestCaseEntity>

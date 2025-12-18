@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>6c5048de-e031-49cc-8f4d-b6bdcd4124b2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>31465947-c91b-4ee2-ac7a-eaab6dfc0403</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Sauce Labs Bike Light'</defaultValue>
+      <description></description>
+      <id>31465947-c91b-4ee2-ac7a-eaab6dfc0403</id>
+      <masked>false</masked>
+      <name>var_productName</name>
+   </variable>
 </TestCaseEntity>

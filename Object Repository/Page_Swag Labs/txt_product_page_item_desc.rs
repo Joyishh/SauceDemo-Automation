@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txt_product_page_item_desc</name>
+   <tag></tag>
+   <elementGuidId>5fb516d7-cf45-4cf9-b800-aeb074199879</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[text()='${productName}']/ancestor::div[@class='inventory_item_description']//div[@class='inventory_item_desc']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[text()='${productName}']/ancestor::div[@class='inventory_item_description']//div[@class='inventory_item_desc']</value>
+      <webElementGuid>ebe9b47d-8fec-4e61-b043-3d2b06e7dcd7</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

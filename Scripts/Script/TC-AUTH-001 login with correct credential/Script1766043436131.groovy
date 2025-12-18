@@ -29,16 +29,18 @@ if(loginPageText.contains('Swag Labs')) {
 	WebUI.closeBrowser()
 }
 
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_user-name'), 'standard_user')
+WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_user-name'), var_username)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_password'), 'ifTZcph1FO93SVr0dZvNUw==')
+WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_password'), var_password)
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_login-button'))
 
-String invalidCredential = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/h3_Epic sadface_ Username and password do not ma'))
-
-if(invalidCredential.contains('Epic sadface: Username and password do not match any user in this service')) {
-	println('cedentialnya salah ni')
+if(var_userType == 'SUCCESS') {
+	WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/div_Close Menu_app_logo'), 'Swag Labs')
+} else if (var_userType == 'LOCKED') {
+	WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/h3_Epic sadface_ Username and password do not ma'), 'Epic sadface: Sorry, this user has been locked out.')
+} else if (var_userType == 'INVALID') {
+    WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/h3_Epic sadface_ Username and password do not ma'), 'Epic sadface: Username and password do not match any user in this service')
+} else {
+	println('user tidak diketahui')
 }
-
-WebUI.closeBrowser()
