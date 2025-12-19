@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/Script/TC-CART-003 user can add products and back to shopping'), null)
-
 TestObject btnRemove = findTestObject('Object Repository/Page_Swag Labs/btn_remove_in_cart', [('productName') : var_productName])
 
 WebUI.click(btnRemove)

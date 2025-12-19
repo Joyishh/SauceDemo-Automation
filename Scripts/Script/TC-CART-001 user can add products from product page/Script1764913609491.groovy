@@ -18,13 +18,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/Script/TC-AUTH-001 login with correct credential'), null)
-
 WebUI.navigateToUrl('https://www.saucedemo.com/inventory.html')
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/btn_dynamic_add_to_cart', [('productName') : var_productName]))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/span_1'), '1')
 
 String descItem = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/txt_product_page_item_desc', [('productName') : var_productName]))
 
@@ -37,3 +33,5 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/txt_car
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/txt_cart_item_desc', [('productName') : var_productName]), descItem, STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/txt_cart_item_price', [('productName') : var_productName]), priceItem, STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_continue-shopping'))

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC-CHEK-003 user cant checkout without firstname</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>d2803007-5a7f-4ad0-90df-43e8c8805eda</testCaseGuid>
-</TestCaseEntity>

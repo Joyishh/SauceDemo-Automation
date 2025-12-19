@@ -17,20 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/Script/TC-CART-001 user can add products from product page'), null)
+WebUI.callTestCase(findTestCase('Test Cases/Script/TC-AUTH-001 login with correct credential'), null)
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/icon_cart'))
 
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_checkout'))
+WebUI.callTestCase(findTestCase('Test Cases/Script/TC-CHEK-001 user can fill checkout info'), null)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/span_Checkout_Your Information'), 'Checkout: Your Information')
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_finish'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_First Name'), 'John')
+WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Swag Labs/h2_Thank you for your order'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Last Name'), '')
-
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Zip_Postal Code'), '123098')
-
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_continue'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/h3_Error_ Last Name is required'), 'Error: Last Name is required')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/span_Checkout_Complete'), 'Checkout: Complete!')

@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.model.FailureHandling.STOP_ON_FAILURE
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -18,16 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/btn_dynamic_add_to_cart', [('productName') : var_productName]))
+WebUI.callTestCase(findTestCase('Test Cases/Script/TC-AUTH-001 login with correct credential'), null)
 
-String descItem = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/txt_product_page_item_desc', [('productName') : var_productName]))
+WebUI.callTestCase(findTestCase('Test Cases/Script/TC-CART-002 user can add products from detail products page'), null)
 
-String priceItem = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/txt_product_page_item_price', [('productName') : var_productName]))
+WebUI.callTestCase(findTestCase('Test Cases/Script/TC-CHEK-001 user can fill checkout info'), [('var_firstName'): '', ('var_lastName'): 'Doe', ('var_zipCode'): '98765'])
 
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/icon_cart'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/txt_cart_item_name', [('productName') : var_productName]), var_productName, STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/txt_cart_item_desc', [('productName') : var_productName]), descItem, STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/txt_cart_item_price', [('productName') : var_productName]), priceItem, STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/Script/TC-CHEK-006 verify checkout error message'), [('var_expectedError'): 'Error: First Name is required'])

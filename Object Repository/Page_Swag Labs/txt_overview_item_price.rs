@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txt_overview_item_price</name>
+   <tag></tag>
+   <elementGuidId>ecc773a0-5664-4505-90ec-6d41912feb55</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='inventory_item_price']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='inventory_item_price']</value>
+      <webElementGuid>08353e5d-ca9c-48db-8f4c-e24b30620e89</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -17,20 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/Script/TC-CART-001 user can add products from product page'), null)
-
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/icon_cart'))
-
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_checkout'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/span_Checkout_Your Information'), 'Checkout: Your Information')
 
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_First Name'), '')
+WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_First Name'), var_firstName)
 
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Last Name'), 'Doe')
+WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Last Name'), var_lastName)
 
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Zip_Postal Code'), '123098')
+WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Zip_Postal Code'), var_zipCode)
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_continue'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/h3_Error_ First Name is required'), 'Error: First Name is required')

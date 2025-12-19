@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC-CHEK-002 user cant checkout without products</name>
+   <name>TC-CHEK-004 user cant checkout without products</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

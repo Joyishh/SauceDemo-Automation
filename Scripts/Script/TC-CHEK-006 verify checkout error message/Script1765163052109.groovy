@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.model.FailureHandling.STOP_ON_FAILURE
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -17,20 +18,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/Script/TC-CART-001 user can add products from product page'), null)
-
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/icon_cart'))
-
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_checkout'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/span_Checkout_Your Information'), 'Checkout: Your Information')
-
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_First Name'), 'John')
-
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Last Name'), 'Doe')
-
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Zip_Postal Code'), '')
-
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_continue'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/h3_Error_ Postal Code is required'), 'Error: Postal Code is required')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/lbl_verify_error_message'), var_expectedError, STOP_ON_FAILURE)

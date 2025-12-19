@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lbl_verify_error_message</name>
+   <tag></tag>
+   <elementGuidId>a81fcb00-388a-4bb9-ae52-965ef8046229</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//h3[@data-test='error']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//h3[@data-test='error']</value>
+      <webElementGuid>a75f04f5-a7f6-45e2-8e33-1beab60dcbea</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lbl_overview_grandTotal</name>
+   <tag></tag>
+   <elementGuidId>151954f0-ddf0-4881-a81f-1b4c3a410a10</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@data-test='total-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@data-test='total-label']</value>
+      <webElementGuid>0d5624ba-645d-4667-9f57-ae0cd0e4fcfe</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

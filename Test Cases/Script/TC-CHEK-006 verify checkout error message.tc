@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC-CART-004 user can remove product from cart</name>
+   <name>TC-CHEK-006 verify checkout error message</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>525fbbcf-2500-4372-8ef8-c3b20aa62a08</testCaseGuid>
+   <testCaseGuid>a4c6427c-6110-481b-a399-189840171146</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0ba3c47b-5aec-4d35-a1f0-4d677838cd1f</variableId>
+      <variableId>b3501264-1933-4b6c-9621-4c070dea5144</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Sauce Labs Bike Light'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>0ba3c47b-5aec-4d35-a1f0-4d677838cd1f</id>
+      <id>b3501264-1933-4b6c-9621-4c070dea5144</id>
       <masked>false</masked>
-      <name>var_productName</name>
+      <name>var_expectedError</name>
    </variable>
 </TestCaseEntity>

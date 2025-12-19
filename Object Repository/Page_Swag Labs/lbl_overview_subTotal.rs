@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lbl_overview_subTotal</name>
+   <tag></tag>
+   <elementGuidId>e04e237b-8ef1-4bfb-965c-59977a91fc0b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@data-test='subtotal-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@data-test='subtotal-label']</value>
+      <webElementGuid>3ddea1d5-cf6c-4c12-83fa-6e4d13212c84</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

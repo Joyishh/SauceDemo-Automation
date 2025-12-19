@@ -1,0 +1,56 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+
+List<WebElement> priceElements = WebUI.findWebElements(findTestObject('Object Repository/Page_Swag Labs/txt_overview_item_price'), 5)
+
+double calculatedSubTotal = 0.00
+for(WebElement element : priceElements) {
+	String priceTxt = element.getText()
+	double priceVal = Double.parseDouble(priceTxt.replaceAll("[^0-9.]", ""))
+	
+	println "Item Price: " + priceVal
+	calculatedSubTotal += priceVal
+}
+
+calculatedSubTotal = Math.round(calculatedSubTotal * 100.0) / 100.0
+println "Total Hitungan Script: " + calculatedSubTotal
+
+String subTotalTxt = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/lbl_overview_subTotal'))
+double subTotal = Double.parseDouble(subTotalTxt.replaceAll("[^0-9.]", ""))
+WebUI.verifyEqual(calculatedSubTotal, subTotal)
+
+String taxTxt = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/lbl_overview_tax'))
+double tax = Double.parseDouble(taxTxt.replaceAll("[^0-9.]", ""))
+println "Total Hitungan Script: " + tax
+
+double grandTotal = subTotal + tax
+grandTotal = Math.round(grandTotal* 100.0) / 100.0
+
+String grandTotalOverviewTxt = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/lbl_overview_grandTotal'))
+double grandTotalOverview = Double.parseDouble(grandTotalOverviewTxt.replaceAll("[^0-9.]", ""))
+println "Total Hitungan Script: " + grandTotalOverview
+
+WebUI.verifyEqual(grandTotal, grandTotalOverview)
+
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_finish'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Swag Labs/h2_Thank you for your order'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Swag Labs/span_Checkout_Complete'), 'Checkout: Complete!')

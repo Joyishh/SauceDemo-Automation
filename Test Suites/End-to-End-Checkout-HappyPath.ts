@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>End-to-End-Checkout-HappyPath</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>10</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>3e2f5c72-d673-47b2-b647-a7ff401eb0ec</testSuiteGuid>
+   <testCaseLink>
+      <guid>1ad12362-6bd4-4d55-8019-c1f41ca0457b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Script/TC-E2E-Happy Path</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ad3027a9-8440-47cf-876d-2fc73f669c0c</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/DDT saucydemo/ProductsData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>ad3027a9-8440-47cf-876d-2fc73f669c0c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>item_1</value>
+         <variableId>0f53190c-a4ba-44d7-95ab-4470280700a0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ad3027a9-8440-47cf-876d-2fc73f669c0c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>item_2</value>
+         <variableId>f5698aaa-fff6-44ea-9448-b09d96ec6bc9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ad3027a9-8440-47cf-876d-2fc73f669c0c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>item_3</value>
+         <variableId>36a7ea3d-f48e-4d9e-89dd-8e83573e0969</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ad3027a9-8440-47cf-876d-2fc73f669c0c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>item_hapus</value>
+         <variableId>e52a0b80-2246-4658-afa8-af2646210dc4</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

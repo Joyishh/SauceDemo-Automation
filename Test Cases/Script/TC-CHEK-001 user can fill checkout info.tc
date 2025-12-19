@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-CHEK-001 user can fill checkout info</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fbe79058-5f3e-4280-bde6-279723787b3b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b0d592c3-552c-44bd-87ae-a94b2b30bd5f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e5f51d91-7eb2-44e0-8ac6-fe34be91f57f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e81b5ad1-3eb8-433f-b920-fe23904a78ba</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'John'</defaultValue>
+      <description></description>
+      <id>b0d592c3-552c-44bd-87ae-a94b2b30bd5f</id>
+      <masked>false</masked>
+      <name>var_firstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Doe'</defaultValue>
+      <description></description>
+      <id>e5f51d91-7eb2-44e0-8ac6-fe34be91f57f</id>
+      <masked>false</masked>
+      <name>var_lastName</name>
+   </variable>
+   <variable>
+      <defaultValue>'98765'</defaultValue>
+      <description></description>
+      <id>e81b5ad1-3eb8-433f-b920-fe23904a78ba</id>
+      <masked>false</masked>
+      <name>var_zipCode</name>
+   </variable>
+</TestCaseEntity>
