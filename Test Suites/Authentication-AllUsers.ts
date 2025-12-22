@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Authentication-AllUsers</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>10</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>4cd7c2d4-6e99-4189-8594-98ca9152b6a2</testSuiteGuid>
+   <testCaseLink>
+      <guid>d60ac280-8d25-44a3-942e-e449efab8eb3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Script/TC-AUTH-001 login with correct credential</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>697f955c-2dc9-460c-acf2-e114d24fe796</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/DDT saucydemo/UserData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>697f955c-2dc9-460c-acf2-e114d24fe796</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>var_username</value>
+         <variableId>def2c3a4-b720-4863-ab6c-a41743a75a8b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>697f955c-2dc9-460c-acf2-e114d24fe796</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>var_password</value>
+         <variableId>17f9bb97-9aea-4a4d-88d1-9b3c52310fb6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>697f955c-2dc9-460c-acf2-e114d24fe796</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>var_userType</value>
+         <variableId>10bfbc24-ea9c-421b-96ff-e167698269bd</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

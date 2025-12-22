@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.saucedemo.com/')
+WebUI.navigateToUrl(GlobalVariable.G_SiteURL)
 
 String loginPageText = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/div_standard_userlocked_out_userproblem_use_68c467'))
 

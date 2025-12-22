@@ -18,7 +18,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.navigateToUrl('https://www.saucedemo.com/inventory.html')
+WebUI.navigateToUrl(GlobalVariable.G_SiteURLInventory)
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/btn_detail_product_page', [('productName'): var_productName]))
 
